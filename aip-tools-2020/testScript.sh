@@ -22,7 +22,7 @@
 
 # ------------ SETTINGS ------------
 
-time='900s'
+time='10s'
 path='./src/barman-sequential-optimal/'
 planner='merge_and_shrink(shrink_strategy=shrink_bisimulation(greedy=false),merge_strategy=merge_sccs(order_of_sccs=topological,merge_selector=score_based_filtering(scoring_functions=[goal_relevance,dfp,total_order])),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=50k,threshold_before_merge=1)'
 folder='merge_and_shrink'
@@ -30,7 +30,7 @@ folder='merge_and_shrink'
 # ---------------------------------- 
 
 domain="${path}domain.pddl"
-for i in $path'instances/'*.pddl;
+for i in $path'instances/'*-10.pddl;
 do
     noExtension=${i%.pddl}
     name=${noExtension##*/}
@@ -40,6 +40,12 @@ do
     r="CMD fd --plan-file ${fullname} --overall-time-limit ${time} ${domain} ${i} --search 'astar(${planner})'"
     sed -i "12s|.*|$r|" student.Dockerfile
     ./build.sh
-    ./run.sh > plan.txt 
-    from1=Solution; to2=exit; a="$(cat plan.txt)"; a="$(echo "${a#*"$from1"}")"; echo "$from1${a%%"$to2"*}$to2" > $fullname
+    ./run.sh > plan.txt
+    # grep -Fxq "Time limit has been reached." plan.ttx
+    if grep -q "Time limit has been reached." plan.txt
+    then
+        tail -n 7 plan.txt > $fullname
+    else
+        from1=Solution; to2=exit; a="$(cat plan.txt)"; a="$(echo "${a#*"$from1"}")"; echo "$from1${a%%"$to2"*}$to2" > $fullname
+    fi
 done
