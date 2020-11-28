@@ -30,7 +30,7 @@ folder='merge_and_shrink'
 # ---------------------------------- 
 
 domain="${path}domain.pddl"
-for i in $path'instances/'*-1.pddl;
+for i in $path'instances/'*.pddl;
 do
     noExtension=${i%.pddl}
     name=${noExtension##*/}
