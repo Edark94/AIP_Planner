@@ -28,14 +28,14 @@
 # ------------ SETTINGS ------------
 
 time='1800s'
-path='./src/barman-sequential-optimal/'
+path='./src/floor-tile-sequential-optimal/'
 planner='merge_and_shrink(shrink_strategy=shrink_bisimulation(greedy=false),merge_strategy=merge_sccs(order_of_sccs=topological,merge_selector=score_based_filtering(scoring_functions=[goal_relevance,dfp,total_order])),label_reduction=exact(before_shrinking=true,before_merging=false),max_states=50k,threshold_before_merge=1)'
 folder='merge_and_shrink'
 
 # ---------------------------------- 
 
 domain="${path}domain.pddl"
-for i in $path'instances/'*.pddl;
+for i in $path'instances/'*-1.pddl;
 do
     noExtension=${i%.pddl}
     name=${noExtension##*/}
@@ -49,7 +49,10 @@ do
     if grep -q "Time limit has been reached." plan.txt
     then
         tail -n 7 plan.txt > $fullname
-    else
+    elif grep -q "Solution found!" plan.txt
+    then
         from1=Solution; to2=exit; a="$(cat plan.txt)"; a="$(echo "${a#*"$from1"}")"; echo "$from1${a%%"$to2"*}$to2" > $fullname
+    else
+    cat plan.txt > $fullname    
     fi
 done
