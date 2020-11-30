@@ -33,16 +33,15 @@ planner='merge_and_shrink(shrink_strategy=shrink_bisimulation(greedy=false),merg
 folder='merge_and_shrink'
 
 # ---------------------------------- 
-
 domain="${path}domain.pddl"
-for i in $path'instances/'*-1.pddl;
+for i in $path'instances/'*.pddl;
 do
     noExtension=${i%.pddl}
     name=${noExtension##*/}
     fullname=${path}"${folder}/"${name}.txt
     touch $fullname
     chmod 666 $fullname
-    r="CMD fd --plan-file ${fullname} --overall-time-limit ${time} ${domain} ${i} --search 'astar(${planner})'"
+    r="CMD fd --plan-file ${fullname} --overall-memory-limit 6000M --overall-time-limit ${time} ${domain} ${i} --search 'astar(${planner})'"
     sed -i "12s|.*|$r|" student.Dockerfile
     ./build.sh
     ./run.sh > plan.txt
