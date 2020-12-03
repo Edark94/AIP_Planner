@@ -9,7 +9,7 @@ WORKDIR /src
 #Run the domain.pddl and problem.pddl in this folder on optic
 #CMD optic domain.pddl problem.pddl
 
-CMD fd --plan-file ./src/floor-tile-sequential-optimal/hmax/instance-9.txt --overall-memory-limit 6000M --overall-time-limit 1800s ./src/floor-tile-sequential-optimal/domain.pddl ./src/floor-tile-sequential-optimal/instances/instance-9.pddl --search 'astar(hmax())'
+CMD fd --plan-file ./blindOutput/nomysterHmax3.txt --overall-memory-limit 6000M --overall-time-limit 1800 ./src/no-mystery-sequential-optimal/domain.pddl ./src/no-mystery-sequential-optimal/instances/instance-1.pddl --search 'astar(hmax)'
 
 #Other software available is
 # - fd
