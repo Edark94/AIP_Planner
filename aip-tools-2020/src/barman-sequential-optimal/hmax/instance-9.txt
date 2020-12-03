@@ -1,0 +1,7 @@
+Peak memory: 2064272 KB
+caught signal 24 -- exiting
+Time limit has been reached.
+Remove intermediate file output.sas
+search exit code: 23
+
+Driver aborting after search

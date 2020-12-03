@@ -1,0 +1,135 @@
+aipdocker
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: 1799.94s
+INFO     translator memory limit: 6000 MB
+INFO     translator command line string: /usr/bin/python3 /src/fd/builds/release/bin/translate/translate.py ./src/floor-tile-sequential-optimal/domain.pddl ./src/floor-tile-sequential-optimal/instances/instance-10.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.010s CPU, 0.004s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.002s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.000s CPU, 0.006s wall-clock]
+Preparing model... [0.010s CPU, 0.004s wall-clock]
+Generated 50 rules.
+Computing model... [0.020s CPU, 0.026s wall-clock]
+713 relevant atoms
+854 auxiliary atoms
+1567 final queue length
+2013 total queue pushes
+Completing instantiation... [0.030s CPU, 0.023s wall-clock]
+Instantiating: [0.060s CPU, 0.061s wall-clock]
+Computing fact groups...
+Finding invariants...
+11 initial candidates
+Finding invariants: [0.010s CPU, 0.008s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.001s wall-clock]
+Instantiating groups... [0.000s CPU, 0.007s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+0 uncovered facts
+Choosing groups: [0.000s CPU, 0.002s wall-clock]
+Building translation key... [0.000s CPU, 0.001s wall-clock]
+Computing fact groups: [0.020s CPU, 0.022s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.001s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.001s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.002s wall-clock]
+Translating task: [0.030s CPU, 0.025s wall-clock]
+0 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+4 propositions removed
+Detecting unreachable propositions: [0.010s CPU, 0.015s wall-clock]
+Reordering and filtering variables...
+32 of 32 variables necessary.
+56 of 60 mutex groups necessary.
+376 of 376 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.010s CPU, 0.006s wall-clock]
+Translator variables: 32
+Translator derived variables: 0
+Translator facts: 172
+Translator goal facts: 24
+Translator mutex groups: 56
+Translator total mutex groups size: 224
+Translator operators: 376
+Translator axioms: 0
+Translator task size: 2504
+Translator peak memory: 40952 KB
+Writing output... [0.010s CPU, 0.008s wall-clock]
+Done! [0.150s CPU, 0.147s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: 1799.69s
+INFO     search memory limit: 6000 MB
+INFO     search command line string: /src/fd/builds/release/bin/downward --search 'astar(hmax())' --internal-plan-file ./src/floor-tile-sequential-optimal/hmax/instance-10.txt < output.sas
+[t=0s, 55860 KB] reading input...
+[t=0.00399963s, 55992 KB] done reading input!
+[t=0.00799962s, 56256 KB] Simplifying 736 unary operators... done! [736 unary operators]
+[t=0.00799962s, 56388 KB] time to simplify: 0s
+[t=0.00799962s, 56388 KB] Initializing HSP max heuristic...
+[t=0.00799962s, 56388 KB] Building successor generator...done!
+[t=0.00799962s, 56388 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.00799962s, 56388 KB] time for successor generation creation: 0s
+[t=0.0119991s, 56388 KB] Variables: 32
+[t=0.0119991s, 56388 KB] FactPairs: 172
+[t=0.0119991s, 56388 KB] Bytes per state: 12
+[t=0.0119991s, 56388 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.0119991s, 56388 KB] New best heuristic value for hmax: 7
+[t=0.0119991s, 56388 KB] g=0, 1 evaluated, 0 expanded
+[t=0.0119991s, 56388 KB] f = 7, 1 evaluated, 0 expanded
+[t=0.0119991s, 56388 KB] Initial heuristic value for hmax: 7
+[t=0.0119991s, 56388 KB] pruning method: none
+[t=0.0119991s, 56388 KB] f = 8, 14 evaluated, 1 expanded
+[t=0.0119991s, 56388 KB] f = 9, 55 evaluated, 5 expanded
+[t=0.0119991s, 56388 KB] f = 10, 158 evaluated, 17 expanded
+[t=0.0199996s, 56388 KB] f = 11, 411 evaluated, 50 expanded
+[t=0.0239994s, 56388 KB] f = 12, 928 evaluated, 117 expanded
+[t=0.0399971s, 56388 KB] f = 13, 1901 evaluated, 255 expanded
+[t=0.0639967s, 56388 KB] f = 14, 3765 evaluated, 517 expanded
+[t=0.107996s, 56568 KB] f = 15, 6874 evaluated, 989 expanded
+[t=0.111999s, 56568 KB] New best heuristic value for hmax: 6
+[t=0.111999s, 56568 KB] g=11, 7099 evaluated, 1061 expanded
+[t=0.185276s, 56836 KB] f = 16, 12266 evaluated, 1799 expanded
+[t=0.303957s, 57236 KB] f = 17, 21074 evaluated, 3215 expanded
+[t=0.503919s, 58020 KB] f = 18, 35381 evaluated, 5486 expanded
+[t=0.803913s, 59604 KB] f = 19, 57711 evaluated, 9280 expanded
+[t=1.27989s, 60292 KB] f = 20, 93268 evaluated, 15188 expanded
+[t=2.00354s, 63196 KB] f = 21, 146238 evaluated, 24579 expanded
+[t=3.12346s, 69848 KB] f = 22, 228850 evaluated, 38941 expanded
+[t=4.74329s, 71960 KB] f = 23, 349139 evaluated, 61092 expanded
+[t=7.28703s, 83120 KB] f = 24, 530850 evaluated, 93948 expanded
+[t=10.7388s, 90812 KB] f = 25, 789176 evaluated, 143358 expanded
+[t=15.8983s, 111644 KB] f = 26, 1171288 evaluated, 215025 expanded
+[t=23.0178s, 129272 KB] f = 27, 1702155 evaluated, 320141 expanded
+[t=33.4163s, 171228 KB] f = 28, 2471397 evaluated, 469705 expanded
+[t=33.4203s, 171228 KB] New best heuristic value for hmax: 5
+[t=33.4203s, 171228 KB] g=23, 2471598 evaluated, 469729 expanded
+[t=47.4429s, 206064 KB] f = 29, 3521673 evaluated, 684043 expanded
+[t=67.7175s, 288456 KB] f = 30, 5019434 evaluated, 984942 expanded
+[t=95.0768s, 472564 KB] f = 31, 7034566 evaluated, 1408255 expanded
+[t=132.822s, 514188 KB] f = 32, 9861053 evaluated, 1993903 expanded
+[t=183.768s, 887032 KB] f = 33, 13612589 evaluated, 2803319 expanded
+[t=252.824s, 940024 KB] f = 34, 18790029 evaluated, 3908323 expanded
+[t=343.191s, 1163432 KB] f = 35, 25576679 evaluated, 5411572 expanded
+[t=467.553s, 1729612 KB] f = 36, 34803241 evaluated, 7437951 expanded
+[t=625.795s, 2121540 KB] f = 37, 46707963 evaluated, 10145397 expanded
+[t=840.095s, 3344116 KB] f = 38, 62609539 evaluated, 13740699 expanded
+[t=1109.22s, 3831932 KB] f = 39, 82851648 evaluated, 18471611 expanded
+Failed to allocate memory.
+Memory limit has been reached.
+Peak memory: 4468288 KB
+Remove intermediate file output.sas
+search exit code: 22
+
+Driver aborting after search

@@ -1,0 +1,59 @@
+Solution found!
+[t=51.9286s, 854868 KB] Actual search time: 50.1697s
+right robot1 tile_3-1 tile_3-2 (1)
+paint-up robot1 tile_4-2 tile_3-2 white (2)
+right robot2 tile_1-2 tile_1-3 (1)
+up robot2 tile_1-3 tile_2-3 (3)
+up robot2 tile_2-3 tile_3-3 (3)
+paint-up robot2 tile_4-3 tile_3-3 black (2)
+down robot1 tile_3-2 tile_2-2 (1)
+left robot2 tile_3-3 tile_3-2 (1)
+left robot2 tile_3-2 tile_3-1 (1)
+paint-up robot2 tile_4-1 tile_3-1 black (2)
+down robot2 tile_3-1 tile_2-1 (1)
+right robot1 tile_2-2 tile_2-3 (1)
+paint-up robot1 tile_3-3 tile_2-3 white (2)
+right robot2 tile_2-1 tile_2-2 (1)
+paint-up robot2 tile_3-2 tile_2-2 black (2)
+down robot2 tile_2-2 tile_1-2 (1)
+left robot1 tile_2-3 tile_2-2 (1)
+left robot1 tile_2-2 tile_2-1 (1)
+right robot2 tile_1-2 tile_1-3 (1)
+paint-up robot2 tile_2-3 tile_1-3 black (2)
+paint-up robot1 tile_3-1 tile_2-1 white (2)
+right robot1 tile_2-1 tile_2-2 (1)
+left robot2 tile_1-3 tile_1-2 (1)
+left robot2 tile_1-2 tile_1-1 (1)
+paint-up robot2 tile_2-1 tile_1-1 black (2)
+down robot1 tile_2-2 tile_1-2 (1)
+paint-up robot1 tile_2-2 tile_1-2 white (2)
+down robot1 tile_1-2 tile_0-2 (1)
+right robot1 tile_0-2 tile_0-3 (1)
+paint-up robot1 tile_1-3 tile_0-3 white (2)
+right robot2 tile_1-1 tile_1-2 (1)
+left robot1 tile_0-3 tile_0-2 (1)
+left robot1 tile_0-2 tile_0-1 (1)
+paint-up robot1 tile_1-1 tile_0-1 white (2)
+down robot2 tile_1-2 tile_0-2 (1)
+paint-up robot2 tile_1-2 tile_0-2 black (2)
+[t=51.9286s, 854868 KB] Plan length: 36 step(s).
+[t=51.9286s, 854868 KB] Plan cost: 52
+[t=51.9286s, 854868 KB] Expanded 5263737 state(s).
+[t=51.9286s, 854868 KB] Reopened 0 state(s).
+[t=51.9286s, 854868 KB] Evaluated 15910441 state(s).
+[t=51.9286s, 854868 KB] Evaluations: 15910441
+[t=51.9286s, 854868 KB] Generated 37789452 state(s).
+[t=51.9286s, 854868 KB] Dead ends: 2039442 state(s).
+[t=51.9286s, 854868 KB] Expanded until last jump: 5263732 state(s).
+[t=51.9286s, 854868 KB] Reopened until last jump: 0 state(s).
+[t=51.9286s, 854868 KB] Evaluated until last jump: 15910422 state(s).
+[t=51.9286s, 854868 KB] Generated until last jump: 37789429 state(s).
+[t=51.9286s, 854868 KB] Number of registered states: 15910441
+[t=51.9286s, 854868 KB] Int hash set load factor: 15910441/33554432 = 0.474168
+[t=51.9286s, 854868 KB] Int hash set resizes: 25
+[t=51.9286s, 854868 KB] Search time: 50.1737s
+[t=51.9286s, 854868 KB] Total time: 51.9286s
+Solution found.
+Peak memory: 854868 KB
+Remove intermediate file output.sas
+search exit

@@ -1,0 +1,45 @@
+Solution found!
+[t=10.8076s, 264964 KB] Actual search time: 9.27631s
+move-up-slow slow0-0 n2 n4 (7)
+board p3 slow0-0 n4 n0 n1 (0)
+move-up-slow slow0-0 n4 n6 (7)
+leave p3 slow0-0 n6 n1 n0 (0)
+board p3 slow1-0 n6 n0 n1 (0)
+move-up-slow slow1-0 n6 n12 (11)
+board p2 slow1-0 n12 n1 n2 (0)
+move-down-slow slow1-0 n12 n7 (10)
+leave p2 slow1-0 n7 n2 n1 (0)
+leave p3 slow1-0 n7 n1 n0 (0)
+move-up-slow slow1-0 n7 n8 (6)
+board p0 slow1-0 n8 n0 n1 (0)
+board p1 slow1-0 n8 n1 n2 (0)
+move-down-slow slow1-0 n8 n6 (7)
+leave p0 slow1-0 n6 n2 n1 (0)
+leave p1 slow1-0 n6 n1 n0 (0)
+board p0 slow0-0 n6 n0 n1 (0)
+board p1 slow0-0 n6 n1 n2 (0)
+move-down-slow slow0-0 n6 n2 (9)
+leave p0 slow0-0 n2 n2 n1 (0)
+move-down-slow slow0-0 n2 n1 (6)
+leave p1 slow0-0 n1 n1 n0 (0)
+[t=10.8076s, 264964 KB] Plan length: 22 step(s).
+[t=10.8076s, 264964 KB] Plan cost: 63
+[t=10.8076s, 264964 KB] Expanded 459726 state(s).
+[t=10.8076s, 264964 KB] Reopened 0 state(s).
+[t=10.8076s, 264964 KB] Evaluated 3490846 state(s).
+[t=10.8076s, 264964 KB] Evaluations: 3490846
+[t=10.8076s, 264964 KB] Generated 10547586 state(s).
+[t=10.8076s, 264964 KB] Dead ends: 0 state(s).
+[t=10.8076s, 264964 KB] Expanded until last jump: 459247 state(s).
+[t=10.8076s, 264964 KB] Reopened until last jump: 0 state(s).
+[t=10.8076s, 264964 KB] Evaluated until last jump: 3486986 state(s).
+[t=10.8076s, 264964 KB] Generated until last jump: 10536996 state(s).
+[t=10.8076s, 264964 KB] Number of registered states: 3490846
+[t=10.8076s, 264964 KB] Int hash set load factor: 3490846/8388608 = 0.416141
+[t=10.8076s, 264964 KB] Int hash set resizes: 23
+[t=10.8076s, 264964 KB] Search time: 9.27631s
+[t=10.8076s, 264964 KB] Total time: 10.8076s
+Solution found.
+Peak memory: 264964 KB
+Remove intermediate file output.sas
+search exit

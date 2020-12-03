@@ -1,0 +1,72 @@
+Solution found!
+[t=1079.24s, 1669420 KB] Actual search time: 1079.22s
+grasp left shot5 (1)
+fill-shot shot5 ingredient1 left right dispenser1 (10)
+pour-shot-to-clean-shaker shot5 ingredient1 shaker1 left l0 l1 (1)
+clean-shot shot5 ingredient1 left right (1)
+fill-shot shot5 ingredient3 left right dispenser3 (10)
+pour-shot-to-used-shaker shot5 ingredient3 shaker1 left l1 l2 (1)
+refill-shot shot5 ingredient3 left right dispenser3 (10)
+leave left shot5 (1)
+grasp left shaker1 (1)
+shake cocktail2 ingredient1 ingredient3 shaker1 left right (1)
+pour-shaker-to-shot cocktail2 shot3 left shaker1 l2 l1 (1)
+empty-shaker left shaker1 cocktail2 l1 l0 (1)
+clean-shaker left right shaker1 (1)
+grasp right shot1 (1)
+leave left shaker1 (1)
+fill-shot shot1 ingredient3 right left dispenser3 (10)
+pour-shot-to-clean-shaker shot1 ingredient3 shaker1 right l0 l1 (1)
+clean-shot shot1 ingredient3 right left (1)
+fill-shot shot1 ingredient2 right left dispenser2 (10)
+pour-shot-to-used-shaker shot1 ingredient2 shaker1 right l1 l2 (1)
+refill-shot shot1 ingredient2 right left dispenser2 (10)
+grasp left shaker1 (1)
+leave right shot1 (1)
+shake cocktail1 ingredient3 ingredient2 shaker1 left right (1)
+pour-shaker-to-shot cocktail1 shot2 left shaker1 l2 l1 (1)
+empty-shaker left shaker1 cocktail1 l1 l0 (1)
+clean-shaker left right shaker1 (1)
+grasp right shot5 (1)
+pour-shot-to-clean-shaker shot5 ingredient3 shaker1 right l0 l1 (1)
+leave right shot5 (1)
+grasp right shot1 (1)
+pour-shot-to-used-shaker shot1 ingredient2 shaker1 right l1 l2 (1)
+leave right shot1 (1)
+shake cocktail3 ingredient3 ingredient2 shaker1 left right (1)
+pour-shaker-to-shot cocktail3 shot4 left shaker1 l2 l1 (1)
+empty-shaker left shaker1 cocktail3 l1 l0 (1)
+clean-shaker left right shaker1 (1)
+leave left shaker1 (1)
+grasp left shot1 (1)
+refill-shot shot1 ingredient2 left right dispenser2 (10)
+pour-shot-to-clean-shaker shot1 ingredient2 shaker1 left l0 l1 (1)
+clean-shot shot1 ingredient2 left right (1)
+fill-shot shot1 ingredient3 left right dispenser3 (10)
+pour-shot-to-used-shaker shot1 ingredient3 shaker1 left l1 l2 (1)
+clean-shot shot1 ingredient3 left right (1)
+grasp right shaker1 (1)
+leave left shot1 (1)
+shake cocktail4 ingredient2 ingredient3 shaker1 right left (1)
+pour-shaker-to-shot cocktail4 shot1 right shaker1 l2 l1 (1)
+[t=1079.24s, 1669420 KB] Plan length: 49 step(s).
+[t=1079.24s, 1669420 KB] Plan cost: 121
+[t=1079.24s, 1669420 KB] Expanded 24530809 state(s).
+[t=1079.24s, 1669420 KB] Reopened 0 state(s).
+[t=1079.24s, 1669420 KB] Evaluated 30662098 state(s).
+[t=1079.24s, 1669420 KB] Evaluations: 30662098
+[t=1079.24s, 1669420 KB] Generated 114724591 state(s).
+[t=1079.24s, 1669420 KB] Dead ends: 5956182 state(s).
+[t=1079.24s, 1669420 KB] Expanded until last jump: 24530797 state(s).
+[t=1079.24s, 1669420 KB] Reopened until last jump: 0 state(s).
+[t=1079.24s, 1669420 KB] Evaluated until last jump: 30662059 state(s).
+[t=1079.24s, 1669420 KB] Generated until last jump: 114724512 state(s).
+[t=1079.24s, 1669420 KB] Number of registered states: 30662098
+[t=1079.24s, 1669420 KB] Int hash set load factor: 30662098/67108864 = 0.456901
+[t=1079.24s, 1669420 KB] Int hash set resizes: 26
+[t=1079.24s, 1669420 KB] Search time: 1079.22s
+[t=1079.24s, 1669420 KB] Total time: 1079.24s
+Solution found.
+Peak memory: 1669420 KB
+Remove intermediate file output.sas
+search exit

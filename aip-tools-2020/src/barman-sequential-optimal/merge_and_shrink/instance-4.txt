@@ -1,0 +1,59 @@
+Solution found!
+[t=40.0245s, 302500 KB] Actual search time: 26.3617s
+grasp left shot4 (1)
+fill-shot shot4 ingredient2 left right dispenser2 (10)
+pour-shot-to-clean-shaker shot4 ingredient2 shaker1 left l0 l1 (1)
+clean-shot shot4 ingredient2 left right (1)
+fill-shot shot4 ingredient1 left right dispenser1 (10)
+pour-shot-to-used-shaker shot4 ingredient1 shaker1 left l1 l2 (1)
+refill-shot shot4 ingredient1 left right dispenser1 (10)
+grasp right shaker1 (1)
+leave left shot4 (1)
+shake cocktail1 ingredient1 ingredient2 shaker1 right left (1)
+pour-shaker-to-shot cocktail1 shot1 right shaker1 l2 l1 (1)
+empty-shaker right shaker1 cocktail1 l1 l0 (1)
+clean-shaker right left shaker1 (1)
+grasp left shot4 (1)
+pour-shot-to-clean-shaker shot4 ingredient1 shaker1 left l0 l1 (1)
+leave right shaker1 (1)
+clean-shot shot4 ingredient1 left right (1)
+fill-shot shot4 ingredient2 left right dispenser2 (10)
+pour-shot-to-used-shaker shot4 ingredient2 shaker1 left l1 l2 (1)
+refill-shot shot4 ingredient2 left right dispenser2 (10)
+grasp right shaker1 (1)
+leave left shot4 (1)
+shake cocktail3 ingredient1 ingredient2 shaker1 right left (1)
+pour-shaker-to-shot cocktail3 shot3 right shaker1 l2 l1 (1)
+empty-shaker right shaker1 cocktail3 l1 l0 (1)
+clean-shaker right left shaker1 (1)
+grasp left shot4 (1)
+pour-shot-to-clean-shaker shot4 ingredient2 shaker1 left l0 l1 (1)
+leave right shaker1 (1)
+clean-shot shot4 ingredient2 left right (1)
+fill-shot shot4 ingredient3 left right dispenser3 (10)
+grasp right shaker1 (1)
+pour-shot-to-used-shaker shot4 ingredient3 shaker1 left l1 l2 (1)
+leave left shot4 (1)
+shake cocktail2 ingredient2 ingredient3 shaker1 right left (1)
+pour-shaker-to-shot cocktail2 shot2 right shaker1 l2 l1 (1)
+[t=40.0245s, 302500 KB] Plan length: 36 step(s).
+[t=40.0245s, 302500 KB] Plan cost: 90
+[t=40.0245s, 302500 KB] Expanded 5357312 state(s).
+[t=40.0245s, 302500 KB] Reopened 0 state(s).
+[t=40.0245s, 302500 KB] Evaluated 5547248 state(s).
+[t=40.0245s, 302500 KB] Evaluations: 5547248
+[t=40.0245s, 302500 KB] Generated 23329450 state(s).
+[t=40.0245s, 302500 KB] Dead ends: 0 state(s).
+[t=40.0245s, 302500 KB] Expanded until last jump: 5357277 state(s).
+[t=40.0245s, 302500 KB] Reopened until last jump: 0 state(s).
+[t=40.0245s, 302500 KB] Evaluated until last jump: 5547212 state(s).
+[t=40.0245s, 302500 KB] Generated until last jump: 23329328 state(s).
+[t=40.0245s, 302500 KB] Number of registered states: 5547248
+[t=40.0245s, 302500 KB] Int hash set load factor: 5547248/8388608 = 0.661283
+[t=40.0245s, 302500 KB] Int hash set resizes: 23
+[t=40.0245s, 302500 KB] Search time: 26.3617s
+[t=40.0245s, 302500 KB] Total time: 40.0245s
+Solution found.
+Peak memory: 302500 KB
+Remove intermediate file output.sas
+search exit
